@@ -52,7 +52,7 @@
 <script>
 
 
-    let socket = new WebSocket("wss://secret-caverns-11171.herokuapp.com:8085/");
+    let socket = new WebSocket("ws://54.159.116.102:8085/");
 
     socket.onopen = function(event) {
         console.log("Соединение установлено.");
