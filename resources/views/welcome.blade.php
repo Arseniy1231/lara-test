@@ -50,7 +50,7 @@
 
 </script>
 <script>
-    let socket = new WebSocket("ws://192.168.43.21:8080");
+    let socket = new WebSocket("wss://54.159.116.102:8080");
 
     socket.onopen = function(event) {
         console.log("Соединение установлено.");
