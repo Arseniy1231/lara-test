@@ -1,1 +1,2 @@
-web: vendor/bin/heroku-php-apache2 public/ && php artisan websocket:run
+web: vendor/bin/heroku-php-apache2 public/ 
+worker: php artisan websocket:run
