@@ -52,8 +52,8 @@
 <script>
 
 
-    let socket = new WebSocket("ws://54.159.116.102:8085/");
-
+let socket = new WebSocket("ws://18.208.60.216:8080");
+    
     socket.onopen = function(event) {
         console.log("Соединение установлено.");
     
