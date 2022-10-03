@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/
+web: chmod u+x socket/socket.sh && socket/socket.sh vendor/bin/heroku-php-apache2 public/ -C nginx_app.conf
