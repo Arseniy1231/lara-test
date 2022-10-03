@@ -51,8 +51,8 @@
 </script>
 <script>
 
-    let HOST = location.origin.replace(/^http/, 'ws')
-    let socket = new WebSocket(HOST);
+
+    let socket = new WebSocket("ws://secret-caverns-11171.herokuapp.com:8889");
 
     socket.onopen = function(event) {
         console.log("Соединение установлено.");

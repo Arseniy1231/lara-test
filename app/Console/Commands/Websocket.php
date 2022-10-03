@@ -38,15 +38,17 @@ class Websocket extends Command
      *
      * @return int
      */
+   
     public function handle()
     {
+        define('APP_PORT', 8889);
+
         $server = IoServer::factory(
             new HttpServer(
                 new WsServer(
                     new \App\MapConnection\Websocket()
                 )
-            ),
-            8080
+            ),APP_PORT
         );
     
         $server->run();
